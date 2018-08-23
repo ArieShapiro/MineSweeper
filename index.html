@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mine Sweeper</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/mine-sweeper.css">
+</head>
+
+<body>
+    <div class="z-index-test"></div>
+    <div class="transition">
+
+    </div>
+
+
+    <div class="test" style="font-size: 70px"></div>
+
+
+
+    <center>
+        <h1 style="font-size: 70px" class="new-friend">
+                <a href="https://www.shuvy.com/ar">1st Sprint Project:</a>Mine Sweeper</h1>
+        <p class="score-beginner"></p>
+        <p class="score-medium"></p>
+        <p class="score-expert"></p>
+
+        <div class="btn" style="display: inline-block">
+            <p class="choose-game-level">Choose Game Level:</p>
+            <button class="beginner" onclick="init(4, 2, 1)">Beginner</button>
+            <button class="medium" onclick="init(6, 5, 2)">Medium</button>
+            <button class="expert" onclick="init(8, 15, 3)">Expert</button>
+        </div>
+        <h2 class="game-status" style="font-size: 30px"></h2>
+        <div style="display: inline-block">
+            <h3 class="flags"></h3>
+            <h3 class="panel-smily">
+                <span class="time" style="text-align:end"></span>
+            </h3>
+            <span class="time" style="text-align:end"></span>
+        </div>
+        <table class="center" border="1">
+            <tbody class="board">
+
+            </tbody>
+        </table>
+    </center>
+
+    <div class="lorem-ipsum">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, dicta. Nemo consequatur veritatis explicabo eos
+        suscipit vitae necessitatibus rem magnam nobis sunt, incidunt corporis aliquid autem eum natus voluptas alias?
+        <img
+            src="img/smily.png" height="80" width="80">
+        <p class="clear">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, voluptates molestiae qui mollitia ea numquam
+        nesciunt provident rem impedit dolores quo voluptatibus perspiciatis hic repellat fugit necessitatibus eius rerum
+        aliquam.</p></div>
+
+    <script src="js/mine-sweeper.js"></script>
+
+    <script type='text/javascript'>
+
+        function nocontext(e) {
+            var clickedTag = (e == null) ? event.srcElement.tagName : e.target.tagName;
+            if (clickedTag == "IMG") {
+
+                return false;
+            }
+        }
+
+
+        document.oncontextmenu = nocontext;
+
+    </script>
+</body>
+
+
+</html>

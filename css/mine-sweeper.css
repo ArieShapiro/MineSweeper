@@ -1,0 +1,126 @@
+
+
+body { 
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+.board {
+    width: 40px;
+    height:40px;
+    text-align: center;
+    font-size:1.4em;
+    color: white;
+}
+
+table {
+    border: 1px white;
+    text-align: center;
+}
+
+.cell {
+    background-color: gray
+    
+}
+
+.score {
+    font-size: 20px;
+}
+
+button {
+    position: fixed;
+    text-align: center;
+    width:80px;
+    height:40px;
+    
+    
+    top:50x;
+}
+.beginner {
+    left:650px;
+}
+
+.medium {
+    left:750px;
+}
+
+.expert {
+    left:850px;
+}
+
+.choose-game-level {
+    position: absolute;
+    bottom: 560px;
+    right: 670px;
+}
+
+.new-friend {
+    position: relative; 
+    right: 200px;   
+}
+
+.z-index-test {
+    background-color: hotpink;
+    height: 100px;
+    width: 100px;
+    border: 50%;
+
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;    
+
+    animation: goround 5s infinite;
+
+}
+
+@keyframes goround {
+    from {left: 5000px;}
+    to {right:100px;}
+}
+
+
+
+
+.lorem-ipsum {
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    left: 0px;
+    bottom: 150px;
+}
+
+img {
+    float: left;        
+}
+
+.clear {
+    clear: both;
+}
+
+a:hover {
+    font-size: 0.5em;
+}
+
+.transition {
+    background-color:burlywood;
+    height: 100px;
+    width: 100px;
+
+    position: fixed;
+    top: 500px;
+    right: 50px;
+    transition: width 2s;
+
+}
+
+.transition:hover {
+    width: 300px;
+}
+
+
+
+
+
+
